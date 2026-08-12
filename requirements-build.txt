@@ -1,0 +1,14 @@
+# Build-time only -- these are needed to PACKAGE WINS as a .exe,
+# not to run WINS itself (that's requirements.txt).
+#
+# IMPORTANT: this is IN ADDITION to requirements.txt, not instead of
+# it. PyInstaller has to run in the same Python environment as WINS's
+# own dependencies (customtkinter, pywin32, pywinauto, etc.), since it
+# needs to find and bundle everything WINS imports. Install both:
+#
+#     pip install -r requirements.txt
+#     pip install -r requirements-build.txt
+#
+# Then build with:  build_exe.bat
+
+pyinstaller>=6.0
