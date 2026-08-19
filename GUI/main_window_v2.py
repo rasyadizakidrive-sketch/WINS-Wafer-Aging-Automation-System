@@ -29,11 +29,11 @@ import logger
 APP_TITLE = "WINS Wafer Loading Automation"
 APP_SUBTITLE = "Production Planning Automation System"
 APP_VERSION = "v2.0"
-USER_FIRST_NAME = "Rasyadi"
+USER_FIRST_NAME = os.getenv("USER_FIRST_NAME", "Planner")
 
 COMPANY_LINE_1 = "Cell Manufacturing Control"
 COMPANY_LINE_2 = "2026"
-COMPANY_LINE_3 = "HANWHA Q CELLS Malaysia"
+COMPANY_LINE_3 = "Wafer Operations"
 
 # Project root is one level above this file's folder (…/Wafer_Aging_Automation/GUI/this_file.py).
 # When packaged as a PyInstaller .exe, the .exe itself sits directly at
@@ -43,7 +43,7 @@ if getattr(sys, "frozen", False):
     BASE_DIR = os.path.dirname(os.path.abspath(sys.executable))
 else:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOGO_PATH = os.path.join(BASE_DIR, "Assets", "qcells_logo.png")
+LOGO_PATH = os.path.join(BASE_DIR, "Assets", "app_logo.png")
 
 # Colors
 COLOR_BG_HEADER = "#101826"
@@ -475,7 +475,7 @@ class MainWindow(ctk.CTk):
 
             ctk.CTkLabel(
                 logo,
-                text="Q",
+                text="W",
                 font=(FONT_FAMILY, 22, "bold"),
                 text_color="white",
             ).pack(expand=True)
