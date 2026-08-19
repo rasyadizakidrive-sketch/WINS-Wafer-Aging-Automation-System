@@ -5,7 +5,11 @@ from pywinauto import Desktop
 
 SAP_LOGON_PATH = r"C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe"
 
-SAP_CONNECTION = "GERP EPA - Production"
+try:
+    from config import SAP_LOGON_PATH, SAP_CONNECTION
+except Exception:
+    SAP_LOGON_PATH = r"C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe"
+    SAP_CONNECTION = "SAP System"
 
 
 def launch_sap():
