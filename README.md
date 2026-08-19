@@ -1,10 +1,8 @@
 # WINS — Wafer Intelligent Navigation System
 
-Internal manufacturing automation platform for **wafer loading and production planning** in a semiconductor manufacturing environment (Hanwha Q CELLS Malaysia).
+Internal manufacturing automation platform for **wafer loading and production planning** in a semiconductor manufacturing environment.
 
 Replaces a 17-step manual planning cycle (8 SAP screens, ~320 clicks, 6 Excel updates, 47 minutes) with a single desktop application: **7 steps, one window, ~4.75 minutes** — a 90% cycle-time reduction.
-
-> **Note:** This is the source code of a company-internal tool. The executive showcase (HTML) lives in the separate [`wins-showcase`](https://github.com/rasyadizakidrive-sketch/wins-showcase) repo.
 
 ## What it automates
 
@@ -73,4 +71,4 @@ Python 3.13 · CustomTkinter · SAP GUI Scripting (COM) · Excel COM (win32com) 
 
 ## License
 
-Internal use — Hanwha Q CELLS Malaysia. Not licensed for redistribution.
+MIT License / Open Source.
